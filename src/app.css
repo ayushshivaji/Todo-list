@@ -1,5 +1,5 @@
 body{
-    /* background-color: cornflowerblue; */
+    background-color: #ecf2f8;
 }
 
 .checked{
@@ -7,7 +7,14 @@ body{
 }
 
 .App-container{
+    margin-top: 50px;
     width: 350px;
+    /* border: 3px solid black; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .App{
@@ -16,13 +23,37 @@ body{
 }
 
 .todo{
-    color: aqua;
+    display: flex;
+    color: #ffffff;
+    background-color: #19212e;
     border-radius: 15px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     border-color: black;
     padding: 10px;
+    margin-bottom: 10px;
+    width: 75%;
+    align-items: center;
+
 }
 
-input{
-    width: 100%;
+.todo input{
+    flex-basis: 25%;
+}
+
+.buttons-container{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    width: 75%;
+}
+
+.clear-all-button{
+    flex-basis: 50%;
+}
+
+#new-todo{
+    width: 75%;
+    border-radius: 5px;
+    padding-bottom: 5px;
 }

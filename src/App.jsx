@@ -36,14 +36,14 @@ function App() {
   return (
     <div className="App">
       <div className='App-container'>
-        <div className='heading align-items-center'>
+        <div className='heading h3'>
          <p>Todos App</p>
         </div>
         {todoList}
         <input type="Text" placeholder='Enter a new todo here' id="new-todo"></input>
         <div className="buttons-container">
-          <button onClick={buttonOnClick}>Submit</button>
-          <button onClick={buttonOnClickClearAll}>Clear All</button>
+          <button id="submit-button" onClick={buttonOnClick}>Submit</button>
+          <button id="clear-all-button" onClick={buttonOnClickClearAll}>Clear All</button>
         </div>
       </div>
     </div> 
